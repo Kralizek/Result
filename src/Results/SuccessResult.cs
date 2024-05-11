@@ -1,4 +1,4 @@
-namespace Result;
+namespace Kralizek.Results;
 
 public class SuccessResult<T> : Result<T>
 {
@@ -10,4 +10,6 @@ public class SuccessResult<T> : Result<T>
     }
 
     public T Value { get; }
+
+    public static implicit operator T(SuccessResult<T> result) => result.Value;
 }

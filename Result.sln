@@ -5,7 +5,11 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{98D8F551-4D00-4BDD-B7D4-1D1DFD91C0DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Result", "src\Result\Result.csproj", "{F345525B-55D8-4177-972A-0F0A605A9F36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Results", "src\Results\Results.csproj", "{F345525B-55D8-4177-972A-0F0A605A9F36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{3A4B9BA9-87EE-45CE-BE9C-2BA9DFD414B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSample", "samples\ConsoleSample\ConsoleSample.csproj", "{397CF19B-03CB-4132-8337-AF3F935FA650}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,8 +24,13 @@ Global
 		{F345525B-55D8-4177-972A-0F0A605A9F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F345525B-55D8-4177-972A-0F0A605A9F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F345525B-55D8-4177-972A-0F0A605A9F36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{397CF19B-03CB-4132-8337-AF3F935FA650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397CF19B-03CB-4132-8337-AF3F935FA650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397CF19B-03CB-4132-8337-AF3F935FA650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397CF19B-03CB-4132-8337-AF3F935FA650}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F345525B-55D8-4177-972A-0F0A605A9F36} = {98D8F551-4D00-4BDD-B7D4-1D1DFD91C0DA}
+		{397CF19B-03CB-4132-8337-AF3F935FA650} = {3A4B9BA9-87EE-45CE-BE9C-2BA9DFD414B0}
 	EndGlobalSection
 EndGlobal
