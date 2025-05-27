@@ -55,19 +55,19 @@ public record FailedResult<T, TError> : Result<T>
     public TError Error { get; }
 }
 
-public static class TypedResult
-{
-    public static Result<T> Fail<T>(string message) => new FailedResult<T, string>(message);
+// public static class TypedResult
+// {
+//     public static Result<T> Fail<T>(string message) => new FailedResult<T, string>(message);
 
-    public static Result<T> NotFound<T>(string? message = null) => new NotFoundResult<T>(message);
+//     public static Result<T> NotFound<T>(string? message = null) => new NotFoundResult<T>(message);
 
-    public static Result<T> NotAuthorized<T>(string? message = null) => new NotAuthorizedResult<T>(message);
+//     public static Result<T> NotAuthorized<T>(string? message = null) => new NotAuthorizedResult<T>(message);
 
-    public static Result<T> Conflict<T>(string message) => new ConflictResult<T>(message);
-}
+//     public static Result<T> Conflict<T>(string message) => new ConflictResult<T>(message);
+// }
 
-public sealed record NotFoundResult<T>(string? message = null) : FailedResult<T, string>(message ?? "Item not found");
+// public sealed record NotFoundResult<T>(string? Message = null) : FailedResult<T, string>(Message ?? "Item not found");
 
-public sealed record NotAuthorizedResult<T>(string? message = null) : FailedResult<T, string>(message ?? "Access not authorized");
+// public sealed record NotAuthorizedResult<T>(string? Message = null) : FailedResult<T, string>(Message ?? "Access not authorized");
 
-public sealed record ConflictResult<T>(string message) : FailedResult<T, string>(message);
+// public sealed record ConflictResult<T>(string Message) : FailedResult<T, string>(Message);

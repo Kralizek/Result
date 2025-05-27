@@ -21,7 +21,7 @@ static Result<int> DoSomeOperation()
 
     if (chance < 2)
     {
-        return TypedResult.Fail<int>("Not good enough");
+        return Result.Fail<int, string>("Not good enough");
     }
 
     return chance;
