@@ -7,7 +7,7 @@ var result = operationResult switch
 {
     SuccessResult<int> { Value: > 5 } => "Very successful",
     SuccessResult<int> => "Successful",
-    FailedResult<int> failed => $"Failed: {failed.Message}",
+    FailedResult<int, string> failed => $"Failed: {failed.Error}",
     _ => throw new NotSupportedException()
 };
 
@@ -21,7 +21,7 @@ static Result<int> DoSomeOperation()
 
     if (chance < 2)
     {
-        return Result.Fail<int>("Not good enough");
+        return TypedResult.Fail<int>("Not good enough");
     }
 
     return chance;
